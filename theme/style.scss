@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.signup{
+    padding: 20px 30px;
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.signup-heading{
+    font-size: 29px;
+    font-weight: bold;
+    color: #373941;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.signup-label{
+    font-size: 16px;
+    color: #636768;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.signup-input{
+    font-family: "Poppins", sans-serif;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #f2f3f5;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.signup-input::placeholder{
+    color: #999;
+    font-weight: 500;
+}
+.submit{
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(30, 104, 201);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+.signup-already{
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+.signup-login-link{
+    text-decoration: none;
+    color: #3c6ff4;
+}
+.primary{
+    background-color: rgb(30, 104, 201);
+    box-shadow: 0px 5px 10px 0 rgba(30, 133, 201, 0.5);
+}
+.primary:hover{
+    background-color: rgb(75, 153, 255);
+}
+.success{
+    background-color: rgb(35, 187, 93);
+    box-shadow: 0px 5px 10px 0 rgba(30, 201, 73, 0.5);
+}
+.success:hover{
+    background-color: rgb(60, 247, 144);
+}
+.danger{
+    background-color: #f73943;
+    box-shadow: 0px 5px 10px 0 rgba(201, 30, 30, 0.5);
+}
+.danger:hover{
+    background-color: rgb(255, 111, 111);
+}

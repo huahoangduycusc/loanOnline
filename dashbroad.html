@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./theme/pub.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./js/datatables.min.js"></script>
+</head>
+<body class="overlay-scrollbar sidebar-expand">
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <img src="https://pub.accesstrade.vn/static/img/logo.png" class="logo" alt="">
+            </li>
+        </ul>
+        <!-- nav right -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+                    <span class="navbar-badge">9</span>
+                </a>
+                <ul id="notification-menu" class="dropdown-menu notification-menu">
+                    <div class="dropdown-menu-header">
+                        <span>Notifications</span>
+                    </div>
+                    <div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Lorem ipsum dolor sit amet consecteturitate aesse, molestiue eaqu rerum!
+                                    <br>
+                                    <span>10/12/2020</span>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="dropdown-menu-footer">
+                        <span>View all notifications</span>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item avt-wrapper">
+                <div class="avatar dropdown">
+                    <img src="./public/a0.png" alt="" class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- end navbar right -->
+    </div>
+    <!-- end navbar -->
+     <!-- Side bar -->
+     <div class="sidebar-overlay"></div>
+     <div class="sidebar">
+         <div class="navbar-header">
+             <a href=""><img src="https://pub.accesstrade.vn/static/img/logo_white_2x.png"></a>
+             <button class="navbar-btn"><i class="fas fa-times"></i></button>
+         </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="" class="sidebar-nav-link">
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="" class="sidebar-nav-link">
+                    <span>Tin tức</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item dropdown-index">
+				<a href="#" class="sidebar-nav-link">
+					<span>Công cụ <b class="caret"></b></span>
+                </a>
+                <ul class="dropdown-menu-index">
+                    <li class="">
+                        <a href="/tools/product_links">Link vay tiền</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Link giới thiệu CTV</a>
+                    </li>
+                </ul>
+			</li>
+			<li class="sidebar-nav-item dropdown-index">
+				<a href="#" class="sidebar-nav-link">
+					<span>Báo cáo <b class="caret"></b></span>
+                </a>
+                <ul class="dropdown-menu-index">
+                    <li class="">
+                        <a href="/tools/product_links">Tổng quan</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Đơn vay</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-nav-item dropdown-index">
+				<a href="#" class="sidebar-nav-link">
+					<span>Thanh toán <b class="caret"></b></span>
+                </a>
+                <ul class="dropdown-menu-index">
+                    <li class="">
+                        <a href="/tools/product_links">Doanh thu của tôi</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Lịch sử thanh toán</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Thông tin tài khoản ngân hàng</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Chính sách thanh toán</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-nav-item dropdown-index">
+				<a href="#" class="sidebar-nav-link">
+					<span>Trợ giúp <b class="caret"></b></span>
+                </a>
+                <ul class="dropdown-menu-index">
+                    <li class="">
+                        <a href="/tools/product_links">Hướng dẫn sử dụng</a>
+                    </li>
+                    <li class="">
+                        <a href="/tools/product_links">Câu hỏi thường gặp</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <!-- End sidebar -->
+    <!-- Main content -->
+    <div class="wrapper">
+        <div class="statistic">
+            <h1><i class="fas fa-chart-line"></i> Thống kê</h1>
+            <div class="select-statistic">
+                <span><i class="far fa-calendar-alt"></i></span>
+                <select name="statictis" id="" class="seclect-option">
+                    <option value="">tháng 2 - 2021</option>
+                </select>
+            </div>
+        </div>
+        <div class="dashbroad">
+            <div class="row">
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-lightgreen">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Hoa hồng phát sinh</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Số đơn: 0
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-purple">
+                            <i class="fa fa-money-bill-alt"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Hoa hồng tạm duyệt</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Chuyển đổi: 1
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red">
+                            <i class="far fa-calendar-times"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Hoa hồng đã hủy</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Chuyển đổi: 1
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-blue">
+                            <i class="fas fa-user-friends"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Hoa hồng từ cộng tác viên</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Tổng lượt nhấp chuột
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green">
+                            <i class="far fa-credit-card"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Hoa hồng được duyệt</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Chuyển đổi: 1
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-sm-6 col-m-4 col-4">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-orange">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Clicks</span>
+                            <span class="info-box-number">0</span>
+                            <div class="info-process"></div>
+                            <span class="info-description">
+                                Tổng lượt nhấp chuột
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+            </div>
+        </div>
+        <!-- end dashbroad -->
+        <!-- chart -->
+        <div class="card">
+            <div class="card-header">
+                Trạng thái các đơn
+            </div>
+            <table id="frmLoan" class="display table-data" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Extn.</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td>2008/12/13</td>
+                        <td>$103,600</td>
+                    </tr>
+                    <tr>
+                        <td>Jena Gaines</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>30</td>
+                        <td>2008/12/19</td>
+                        <td>$90,560</td>
+                    </tr>
+                    <tr>
+                        <td>Quinn Flynn</td>
+                        <td>Support Lead</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2013/03/03</td>
+                        <td>$342,000</td>
+                    </tr>
+                    <tr>
+                        <td>Charde Marshall</td>
+                        <td>Regional Director</td>
+                        <td>San Francisco</td>
+                        <td>36</td>
+                        <td>2008/10/16</td>
+                        <td>$470,600</td>
+                    </tr>
+                    <tr>
+                        <td>Haley Kennedy</td>
+                        <td>Senior Marketing Designer</td>
+                        <td>London</td>
+                        <td>43</td>
+                        <td>2012/12/18</td>
+                        <td>$313,500</td>
+                    </tr>
+                    <tr>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td>2010/03/17</td>
+                        <td>$385,750</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Silva</td>
+                        <td>Marketing Designer</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td>2012/11/27</td>
+                        <td>$198,500</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Bruce</td>
+                        <td>Javascript Developer</td>
+                        <td>Singapore</td>
+                        <td>29</td>
+                        <td>2011/06/27</td>
+                        <td>$183,000</td>
+                    </tr>
+                    <tr>
+                        <td>Donna Snider</td>
+                        <td>Customer Support</td>
+                        <td>New York</td>
+                        <td>27</td>
+                        <td>2011/01/25</td>
+                        <td>$112,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <p>
+                    <span class="hint-text">Copyright © 2016. </span>
+                    <span class="bold">All rights reserved.</span>
+                    <span class="font-montserrat" style="text-transform: uppercase;">Accesstrade</span>
+                    <span class="font-montserrat"><a href="https://member.accesstrade.vn/media/docs/partner/TOS_PARTNER_ACCESSTRADE.pdf">Term Of
+                        Service</a></span>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main content -->
+    <script src="./js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#frmLoan').DataTable({
+            "order": [[ 4, "desc" ]]
+        });
+    });
+    </script>
+</body>
+</html>

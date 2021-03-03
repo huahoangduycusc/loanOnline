@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./theme/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="signup">
+        <img src="./public/money.png" alt="" style="width: 70px;display: block;margin: 0 auto;">
+        <h1 class="signup-heading">Vay tiền</h1>
+        <form action="" method="get" autocomplete="off">
+            <label for="username" class="signup-label">Họ và tên</label>
+            <input type="text" id="username" name="username" class="signup-input">
+            <label for="address" class="signup-label">Nơi ở hiện tại</label>
+            <select name="address" id="address" class="signup-input">
+                <option value="">Cần thơ</option>
+                <option value="">Kiên Giang</option>
+                <option value="">Hậu Giang</option>
+            </select>
+            <label for="fullname" class="signup-label">Số điện thoại</label>
+            <input type="text" id="fullname" name="fullname" class="signup-input">
+            <label for="fullname" class="signup-label">Ngày tháng năm sinh</label>
+            <input type="text" id="fullname" name="fullname" class="signup-input">
+            <label for="email" class="signup-label">Số chứng minh thư (CMND)</label>
+            <input type="text" id="email" name="email" class="signup-input">
+            <label for="major" class="signup-label">Nghề nghiệp</label>
+            <input type="text" id="major" name="major" class="signup-input">
+            <label for="money" class="signup-label">Số tiền cần vay (Tối thiểu 5,000,000 VND)</label>
+            <input type="text" id="money" name="money" class="signup-input" min="5000000" max="100000000">
+            <button class="submit danger">Gửi yêu cầu</button>
+        </form>
+        <p class="signup-already">
+            <span>Bạn đã đọc điều lệ vay tiền ?</span>
+            <a href="" class="signup-login-link">Xem tại đây</a>
+        </p>
+    </div>
+    <script>
+        $("#money").on('keyup', function(){
+            var n = parseInt($(this).val().replace(/\D/g,''),10);
+            $(this).val(n.toLocaleString());
+        });
+    </script>
+</body>
+</html>
