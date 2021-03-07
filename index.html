@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./theme/theme.css" type="text/css">
 </head>
 <body>
@@ -22,10 +28,10 @@
     <header>
         <div class="header-container">
             <nav>
-                <div class="logo"><a href=""><img src="https://accesstrade.vn/wp-content/themes/accesstradev2/assets/images/logo-normal.png" alt=""></a></div>
+                <div class="logo"><a href=""><img src="/public/logo.png" alt=""></a></div>
                 <ul class="navbar">
                     <div class="logo-sm">
-                        <a href=""><img src="https://accesstrade.vn/wp-content/themes/accesstradev2/assets/images/logo-normal.png" alt=""></a>
+                        <a href=""><img src="/public/logo.png" alt=""></a>
                     </div>
                     <li class="navbar-item">
                         <a href="#" class="navbar-link">Trang chủ</a>
@@ -54,8 +60,10 @@
             <h1>MẠNG LƯỚI AFFILIATE HIỆU QUẢ VÀ UY TÍN</h1>
             <p>** là một sản phẩm của Interspace Việt Nam - công ty liên doanh bởi Tập đoàn MOG Việt Nam và Interspace Nhật Bản.</p>
             <div class="banner">
-                <img src="./public/home.png" alt="">
+                <div><img src="./public/home.png" alt=""></div>
+                <div><img src="https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg" alt=""></div>
             </div>
+            
         </div>
     </div>
     <div class="container">
@@ -238,5 +246,14 @@
         <!-- footer -->
     </footer>
     <script src="./js/app.js"></script>
+    <script>
+  $('.banner').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+	
+    </script>
 </body>
 </html>
